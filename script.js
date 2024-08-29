@@ -18,10 +18,13 @@ const caixaPrincipal = document.querySelector(".caixa- principal");
      responder a todas as dúvidas que uma pessoa pode ter.
      Além disso, o chat também gera imagens e áudios
      hiper-realistas. Qual o seu primeiro pensamento?,",
-     alternativas: [“Isso é assustador!",“Isso é maravilhoso!” ], 
+
+       alternativas: [“Isso é assustador!",“Isso é maravilhoso!” ], 
        { texto: “Isso é assustador!”, afirmacao: “afirmação”
+        afirmacao: “afirmação”
      },
        { texto: “Isso é maravilhoso!”, afirmacao: “afirmação”
+        afirmacao: “afirmação”
      }
       let atual = 0;
       let perguntaAtual;
