@@ -1,42 +1,51 @@
-:root{
-    --cor-fundo: #01080E;
-    --cor-principal: #0B0D20;
-    --cor-secundaria: #212333;
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
-    body {
-
-        background-color: var(--cor-fundo);
-        color: var(--cor-texto);
+:root {
+    --bg-color: #222831;
+    --primary-color: #DDDDDD;
+    --secundary-color: #F05454;
+    --font: “Nunito Sans”, sans-serif;
+    }
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+    }
+<head>
+     <meta charset=”UTF-8”>
+     <meta name=”viewport” content=”width=device-width,
+initial-scale=1.0”>
+     <title>Redes Sociais</title>
+     <link rel=”stylesheet” href=”style.css”>
+</head>
+  header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+    h1 {
+        font-size: 2rem;
+        color: var(--bg-color);
+        font-weight: 700;
+        }
+    }
+    nav {
         display: flex;
         justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        
-        }
-        .caixa-principal {
-
-            background-color: var(--cor-fundo);
-            width: 90%;
-            max-width: 600px;
-            text-align: center;
-            padding: 20px;
-            h1 {
-                color: var(--cor-destaque);
-                }
-                button {
-                    background-color: var(--cor-secundaria);
-                    color: var(--cor-texto);
-                    border: none;
-                    border-radius: 15px;
-                    padding: 15px;
-                    transition: background-color 0.3s;
-                }
-                button:hover{
-                    background-color: var(--cor-destaque);
-                    color: var(--cor-principal);
-
-                }
-            }
+        font-weight: 400;
     }
+        nav a:hover {
+            text-decoration: none;
+            color: var(--bg-color);
+            margin: 0rem 2rem 3rem 0rem;
+            font-size: 12rem;
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            width: 100%;
+            height: 3rem;
+            margin-top: 2rem;
+            }
